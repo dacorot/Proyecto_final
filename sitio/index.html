@@ -23,9 +23,9 @@
       <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><i class="bi bi-list"></i></button>
       <nav class="site-nav" aria-label="Navegación principal">
         <a href="#solucion">La solución</a>
-        <a href="#proceso">Cómo funciona</a>
-        <a href="#nariño">Proyecto en Nariño</a>
-        <a class="nav-cta" href="#proceso">Explorar el proceso <i class="bi bi-arrow-up-right"></i></a>
+        <a href="proceso.html">Cómo funciona</a>
+        <a href="proyecto-narino.html">Proyecto en Nariño</a>
+        <a class="nav-cta" href="proceso.html">Explorar el proceso <i class="bi bi-arrow-up-right"></i></a>
       </nav>
     </div>
   </header>
@@ -37,8 +37,8 @@
         <h1>De residuos orgánicos a <em>energía confiable.</em></h1>
         <p class="hero-lede">Aprovechamos el biogás producido por la materia orgánica para generar electricidad y calor cuando se necesitan.</p>
         <div class="hero-actions">
-          <a class="button button-lime" href="#proceso">Conoce el proceso <i class="bi bi-arrow-down-right"></i></a>
-          <a class="text-link" href="#nariño">Ver el caso de Nariño <i class="bi bi-arrow-right"></i></a>
+          <a class="button button-lime" href="proceso.html">Conoce el proceso <i class="bi bi-arrow-down-right"></i></a>
+          <a class="text-link" href="proyecto-narino.html">Ver el caso de Nariño <i class="bi bi-arrow-right"></i></a>
         </div>
         <div class="hero-note"><i class="bi bi-lightning-charge-fill"></i><span>Una fuente renovable que complementa la energía solar y eólica.</span></div>
       </div>
@@ -121,7 +121,7 @@
         <h2>Biogás a partir de un subproducto del aceite de palma.</h2>
         <p>El proyecto descrito en Nariño muestra cómo un subproducto agroindustrial puede convertirse en combustible para motores de generación y aportar a una operación con menor dependencia de combustibles convencionales.</p>
         <div class="case-detail"><span class="case-icon"><i class="bi bi-recycle"></i></span><span><strong>Economía circular en acción</strong><small>Un residuo local se integra a un ciclo de aprovechamiento energético.</small></span></div>
-        <a class="button button-outline" href="#preguntas">Entender la tecnología <i class="bi bi-arrow-right"></i></a>
+        <a class="button button-outline" href="proyecto-narino.html">Conocer el proyecto <i class="bi bi-arrow-right"></i></a>
       </div>
     </section>
 
@@ -141,19 +141,6 @@
     <a class="footer-top" href="#inicio" aria-label="Volver al inicio"><i class="bi bi-arrow-up"></i></a>
     <div class="footer-bottom"><span>Proyecto académico · RenoEnergy</span><span>Energía circular para un futuro renovable</span></div>
   </footer>
-  <script>
-    const menuButton = document.querySelector('.menu-toggle');
-    const siteNav = document.querySelector('.site-nav');
-    menuButton.addEventListener('click', () => {
-      const isOpen = siteNav.classList.toggle('is-open');
-      menuButton.setAttribute('aria-expanded', String(isOpen));
-      menuButton.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
-    });
-    siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      siteNav.classList.remove('is-open');
-      menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', 'Abrir menú');
-    }));
-  </script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

@@ -1,14 +1,20 @@
 # Proyecto final
 
-Proyecto web de RenoEnergy, con páginas HTML y archivos de datos de apoyo.
+RenoEnergy presenta una propuesta de generación de electricidad y calor a partir de biogás producido con residuos orgánicos.
 
-## Estructura
+## Sitio web
 
-- `sitio/`: sitio web completo, con `index.html`, recursos `assets/` y formularios.
-- `Study.html` y `Editar.html`: páginas HTML adicionales.
-- `datos/originales/`: archivos CSV y Excel de entrada o de ejemplo.
-- `datos/procesados/`: datos generados o transformados.
+La web está dentro de `sitio/`:
 
-## Privacidad
+- `index.html`: portada y resumen de la propuesta.
+- `proceso.html`: explicación del proceso de producción de biogás.
+- `proyecto-narino.html`: caso de referencia relacionado con Nariño.
+- `assets/css/reno.css`: estilos compartidos y diseño adaptable.
+- `assets/js/site.js`: navegación móvil compartida.
 
-El archivo `datos/originales/Datos compañeros.csv` y el ZIP original de la maquetación se conservan localmente y están excluidos del repositorio público. Los datos personales de contacto se retiraron de las páginas publicadas.
+## Datos
+
+- `datos/originales/`: datos de entrada y ejemplos.
+- `datos/procesados/`: datos procesados.
+
+El archivo local `datos/originales/Datos compañeros.csv` y la carpeta de materiales duplicados `recursos/` están excluidos del repositorio público.

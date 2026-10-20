@@ -1,6 +1,5 @@
-
-# Datos personales locales; no publicar
+# Datos personales; conservar solo en el equipo local
 /datos/originales/Datos compañeros.csv
 
-# Archivo comprimido duplicado; conservar solo localmente
-/recursos/maquetacion/Maquetacion RenoEnergy.zip
+# Copia de trabajo y materiales de maquetación duplicados
+/recursos/
